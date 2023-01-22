@@ -19,18 +19,18 @@ function renderLicenseSection(license) {
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
-# Description
+## Description
 ${data.Description}
-# Installation
-The following necessary dependencies must be installed to run the application properly: ${data.Installation}
-# Usage
+## Installation
+The following necessary dependencies: ${data.Installation}, must be installed to run the application properly. 
+## Usage
 In order to use this app, ${data.Usage}
-# License
+## License
 ${data.License}.
-# Credits
-​Contributors: ${data.Credit}
-# Tests
-The following is needed to run the test: ${data.Tests}
+## Credits
+${data.Credit}
+## Tests
+The following commands are needed to run the test: ${data.Tests}
 `
 };
 
