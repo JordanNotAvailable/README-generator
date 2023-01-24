@@ -1,7 +1,6 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer')
 const fs = require('fs');
-const util = require("util");
 
 const generatorMarkdown = require('./utils/generateMarkdown.js');
 
@@ -14,6 +13,10 @@ const questions = [{
     type: "input",
     message: "What is the project about? Give a detailed description of your project?",
     name: "Description"
+}, {
+    type: "input",
+    message: "Table of Contents.",
+    name: "Table of Contents"
 }, {
     type: "input",
     message: "What does the user need to install to run this app (ie...dependencies)?",
@@ -29,11 +32,23 @@ const questions = [{
 }, {
     type: "input",
     message: "Who contributed to this project?:",
-    name: "Credit"
+    name: "Contributing"
 }, {
     type: "input",
     message: "What commands are needed to test this app?",
     name: "Tests"
+}, {
+    type: "input",
+    message: "Contact info for inquiries.",
+    name: "Questions"
+}, {
+    type: 'input',
+    message: 'What is your Github username?',
+    name: 'Username'
+}, {
+    type: 'input',
+    message: 'What is your email address?',
+    name: 'Email'
 },
 ];
 
